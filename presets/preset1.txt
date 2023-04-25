@@ -1,0 +1,10 @@
+-P 'C:\ffmpeg'
+-N 4
+-o '%(title)s.%(ext)s'
+-f 'bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b'
+--write-subs
+--restrict-filenames
+--convert-subs ass
+--user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
+
+
