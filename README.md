@@ -42,5 +42,5 @@ Download here: [svtplay-dl-helper-v1.0.zip](https://github.com/dobbelina/svtplay
 
 ## Screenshot
 
-
+<p align="center"><img src="yt-dlp-multiconfig.png" width="600" /></p>
 
