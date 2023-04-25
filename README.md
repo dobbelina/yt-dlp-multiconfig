@@ -19,6 +19,10 @@ A folder is also created called presets, where the 3 config files are located.
 If you want to change the shortcut key **Ctrl + p** you can do that as well to start the download process.  
 To exit the program press **F4**
 
+The Preset options can be named anything reflecting what you put in the config files.
+If you change Debug to "on" yt-dlp will stay open for debugging purposes.
+For more thorough info add ´--verbose´ to the config file/s
+
 Example below:
 ```
 [Options]
@@ -34,7 +38,7 @@ Download here: [svtplay-dl-helper-v1.0.zip](https://github.com/dobbelina/svtplay
 
 
 (Windows only)  
-Hoppas du gillar programmet!
+
 
 ## Screenshot
 
