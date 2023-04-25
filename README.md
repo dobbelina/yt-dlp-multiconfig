@@ -21,7 +21,7 @@ To exit the program press **F4**
 
 The Preset options can be named anything reflecting what you put in the config files.  
 If you change Debug to "on" yt-dlp will stay open for debugging purposes.  
-For more thorough info add ´--verbose´ to the config file/s
+For more thorough info add `--verbose` to the config file/s
 
 Example below:
 ```
