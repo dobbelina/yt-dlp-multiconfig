@@ -12,7 +12,7 @@ _**Features**_
   **Instructions**  
 Put yt-dlp-multiconfig.exe in a folder of your choice.  
 First time you run it it will create a settings file called yt-dlp-multiconfig.ini in the same directory.  
-Open that file with a texteditor and edit the path to yt-dlp.exe. 
+Open that file with a texteditor and edit the path to yt-dlp.exe.   
 It is higly recommended to add yt-dlp to the path variable [How to add path](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
 
 Also edit the path to your desired download location for the videos.  
