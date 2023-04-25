@@ -21,9 +21,12 @@ To exit the program press **F4**
 Example below:
 ```
 [Options]
-ProgramPath=C:\ffmpeg\bin\svtplay-dl\svtplay-dl.exe
-Outputfolder=C:\ffmpeg
+ProgramPath=yt-dlp
+Preset1=mp4 video + subs ass convert
+Preset2=mp3 audio only
+Preset3=Subs only original format
 Shortcut=p
+Debug=off
 ```
 Download here: [svtplay-dl-helper-v1.0.zip](https://github.com/dobbelina/svtplay-dl-helper/releases/download/v1.0-Windows/svtplay-dl-helper-v1.0.zip)
 
