@@ -1,13 +1,13 @@
 # yt-dlp-multiconfig
 Browser utility for yt-dlp with multiple config files
 
-svtplay-dl-helper is a utility to facilitate downloads in any browser with the popular  
-svtplay-dl program https://svtplay-dl.se/
+yt-dlp-multiconfig is a utility to facilitate downloads in any browser with the popular  
+yt-dlp program https://github.com/yt-dlp/yt-dlp
 
 _**Features**_
  - _Should work with all browsers_
- - _Can download subtitles_
-  - _Automatic merge of subtitles with video as an option_
+ - _3 different config options_
+  - _Passes referer url to yt-dlp_
   
   **Instructions**  
 Put svtplay-dl-helper.exe in a folder of your choice.  
