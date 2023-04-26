@@ -23,7 +23,7 @@ To exit the program press **F4**
 
 The Preset options can be named anything reflecting what you put in the config files.  
 If you change Debug to "on" yt-dlp will stay open for debugging purposes.  
-For more thorough info add `--verbose` to the config file/s
+For more thorough info add `--verbose` to the config file/s  
 
 Example below:
 ```
@@ -35,6 +35,7 @@ Preset3=Subs only original format
 Shortcut=p
 Debug=off
 ```
+The `-P` switch in the config files sets the download location for the videos/subtitles etc  
 Download here: [yt-dlp-multiconfig-v1.0.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/download/v1.0-Windows/yt-dlp-multiconfig-v1.0.zip)
 
 ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/dobbelina/yt-dlp-multiconfig/v1.0-Windows/total)
