@@ -35,9 +35,9 @@ Preset3=Subs only original format
 Shortcut=p
 Debug=off
 ```
-Download here: [svtplay-dl-helper-v1.0.zip](https://github.com/dobbelina/svtplay-dl-helper/releases/download/v1.0-Windows/svtplay-dl-helper-v1.0.zip)
+Download here: [yt-dlp-multiconfig-v1.0.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/download/v1.0-Windows/yt-dlp-multiconfig-v1.0.zip)
 
-
+![GitHub Releases (by Release)](https://img.shields.io/github/downloads/dobbelina/yt-dlp-multiconfig/v1.0-Windows/total)
 
 (Windows only)  
 
