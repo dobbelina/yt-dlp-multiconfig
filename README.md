@@ -21,7 +21,7 @@ It is also recommended to download ffmpeg and put in the same folder as yt-dlp.e
 If you want to change the shortcut key **Ctrl + p** you can do that as well to start the download process.  
 To exit the program press **F4**
 
-The Preset options can be named anything reflecting what you put in the config files.  
+The Preset options can be named anything you want, reflecting what you put in the config files.  
 If you change Debug to "on" yt-dlp will stay open for debugging purposes.  
 
 Example below:
@@ -36,6 +36,7 @@ Debug=off
 ```
 For more thorough info add `--verbose` to the config file/s  
 The `-P` switch in the config files sets the download location for the videos/subtitles etc  
+Please delete any pre-existing config files or they will interfere with this program.
 
 Download here: [yt-dlp-multiconfig-v1.0.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/download/v1.0-Windows/yt-dlp-multiconfig-v1.0.zip)
 
