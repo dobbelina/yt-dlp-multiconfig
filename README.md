@@ -1,4 +1,4 @@
-# yt-dlp-multiconfig
+# yt-dlp-multiconfig ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 Browser utility for yt-dlp with multiple config files
 
 yt-dlp-multiconfig is a utility to facilitate downloads in any browser with the popular  
