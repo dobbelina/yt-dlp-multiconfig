@@ -25,7 +25,7 @@ To exit the program press **F4**
 The Preset options can be named anything you want, reflecting what you put in the config files.  
 If you change Debug to "on" yt-dlp will stay open for debugging purposes.  
 
-Example below where yt-dlp has no path because it,s added to the path variable:
+Example below where yt-dlp has no path because it's added to the path variable:
 ```
 [Options]
 ProgramPath=yt-dlp
