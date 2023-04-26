@@ -24,6 +24,7 @@ To exit the program press **F4**
 
 The Preset options can be named anything you want, reflecting what you put in the config files.  
 If you change Debug to "on" yt-dlp will stay open for debugging purposes.  
+For more thorough info add `--verbose` to the config file/s  
 
 Example below where yt-dlp has no path because it's added to the path variable:
 ```
@@ -35,7 +36,6 @@ Preset3=Subs only original format
 Shortcut=p
 Debug=off
 ```
-For more thorough info add `--verbose` to the config file/s  
 The `-P` switch in the config files sets the download location for the videos/subtitles etc  
 Please delete any pre-existing config files or they will interfere with this program.
 
