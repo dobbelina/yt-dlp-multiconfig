@@ -36,6 +36,7 @@ Shortcut=p
 Debug=off
 ```
 The `-P` switch in the config files sets the download location for the videos/subtitles etc  
+
 Download here: [yt-dlp-multiconfig-v1.0.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/download/v1.0-Windows/yt-dlp-multiconfig-v1.0.zip)
 
 ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/dobbelina/yt-dlp-multiconfig/v1.0-Windows/total)
