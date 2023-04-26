@@ -31,7 +31,7 @@ IniRead, Preset1, yt-dlp-multiconfig.ini, Options, Preset1
 IniRead, Preset2, yt-dlp-multiconfig.ini, Options, Preset2
 IniRead, Preset3, yt-dlp-multiconfig.ini, Options, Preset3
 IniRead, Shortcut, yt-dlp-multiconfig.ini, Options, Shortcut
-IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
+
 Opt1 = %A_ScriptDir%\presets\preset1.txt
 Opt2 = %A_ScriptDir%\presets\preset2.txt
 Opt3 = %A_ScriptDir%\presets\preset3.txt
@@ -56,6 +56,7 @@ Sleep 50
 return
 
 label1:
+IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
 Progress, off
 accData:= GetAccData() 
 url := accData.2
@@ -67,6 +68,7 @@ Run, %ProgramPath% --config-locations %Opt1% --referer %referer% %url%
 Exit
 
 label2:
+IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
 Progress, off
 accData:= GetAccData() 
 url := accData.2
@@ -78,6 +80,7 @@ Run, %ProgramPath% --config-locations %Opt2% --referer %referer% %url%
 Exit
 
 label3:
+IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
 Progress, off
 accData:= GetAccData() 
 url := accData.2
