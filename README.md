@@ -13,7 +13,7 @@ _**Features**_
 Put yt-dlp-multiconfig.exe in a folder of your choice.  
 First time you run it it will create a settings file called yt-dlp-multiconfig.ini in the same directory.  
 Open that file with a texteditor and edit the path to yt-dlp.exe.   
-A folder is also created called presets, where the 3 config files are located.  
+A folder is also created called presets, where the **3 config files** are located.  
 
 It is higly recommended to add yt-dlp to the path variable [How to add path](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)  
 It is also recommended to download ffmpeg and put in the same folder as yt-dlp.exe.
@@ -22,6 +22,7 @@ It is also recommended to download ffmpeg and put in the same folder as yt-dlp.e
 If you want to change the shortcut key **Ctrl + p** you can do that as well to start the download process.  
 To exit the program press **F4**
 
+**yt-dlp-multiconfig.ini Settings:**  
 The Preset options can be named anything you want, reflecting what you put in the config files.  
 If you change Debug to "on" yt-dlp will stay open for debugging purposes.  
 For more thorough info add `--verbose` to the config file/s  
