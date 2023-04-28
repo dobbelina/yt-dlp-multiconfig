@@ -40,7 +40,7 @@ Debug=off
 The `-P` switch in the config files sets the download location for the videos/subtitles etc  
 Please delete any pre-existing config files or they will interfere with this program.
 
-Download here: [yt-dlp-multiconfig-v1.0.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/download/v1.0-Windows/yt-dlp-multiconfig-v1.0.zip)
+Download here: [yt-dlp-multiconfig.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/latest/download/yt-dlp-multiconfig.zip)
 
 ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/dobbelina/yt-dlp-multiconfig/v1.0-Windows/total)
 
