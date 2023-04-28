@@ -1,8 +1,8 @@
 ;@Ahk2Exe-SetCopyright    Dobbelina
 ;@Ahk2Exe-SetDescription  yt-dlp-multiconfig
-;@Ahk2Exe-SetFileVersion   1.0.0.0
+;@Ahk2Exe-SetFileVersion   1.1.0.0
 ;@Ahk2Exe-SetProductName   yt-dlp-multiconfig.exe
-;@Ahk2Exe-SetProductVersion   1.0.0.0
+;@Ahk2Exe-SetProductVersion   1.1.0.0
 
 #NoEnv
 #Include PageUrl.ahk
@@ -32,10 +32,6 @@ IniRead, Preset2, yt-dlp-multiconfig.ini, Options, Preset2
 IniRead, Preset3, yt-dlp-multiconfig.ini, Options, Preset3
 IniRead, Shortcut, yt-dlp-multiconfig.ini, Options, Shortcut
 
-Opt1 = %A_ScriptDir%\presets\preset1.txt
-Opt2 = %A_ScriptDir%\presets\preset2.txt
-Opt3 = %A_ScriptDir%\presets\preset3.txt
-
 Progress,B2 fs18 c0 zh0  w350 h30 CW4e8af2 CTFFFFFF,Download = Ctrl + %Shortcut% F4 To Exit ,, yt-dlp-dl-Notification
 Fader()
 
@@ -56,45 +52,39 @@ Sleep 50
 return
 
 label1:
-IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
-Progress, off
-accData:= GetAccData() 
-url := accData.2
-RegExMatch(url, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
-if (Debug != "off")
-Run, %comspec% /k %ProgramPath% --config-locations %Opt1% --referer %referer% %url%
-else
-Run, %ProgramPath% --config-locations %Opt1% --referer %referer% %url% 
+Opt = %A_ScriptDir%\presets\preset1.txt
+DownloadWithPreset(Opt)
 Exit
 
 label2:
-IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
-Progress, off
-accData:= GetAccData() 
-url := accData.2
-RegExMatch(url, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
-if (Debug != "off")
-Run, %comspec% /k %ProgramPath% --config-locations %Opt2% --referer %referer% %url%
-else
-Run, %ProgramPath% --config-locations %Opt2% --referer %referer% %url%
+Opt = %A_ScriptDir%\presets\preset2.txt
+DownloadWithPreset(Opt)
 Exit
 
 label3:
-IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
-Progress, off
-accData:= GetAccData() 
-url := accData.2
-RegExMatch(url, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
-if (Debug != "off")
-Run, %comspec% /k %ProgramPath% --config-locations %Opt3% --referer %referer% %url%
-else
-Run, %ProgramPath% --config-locations %Opt3% --referer %referer% %url%
+Opt = %A_ScriptDir%\presets\preset3.txt
+DownloadWithPreset(Opt)
 Exit
 
 F4::
 Progress,B2 fs18 c0 zh0  w290 h30 CW4e8af2 CTFFFFFF cbBlack,Closing Yt-dlp-multiconfig,, yt-dlp-dl-Notification
 Fader()
 ExitApp
+
+DownloadWithPreset(Opt) {
+  global ProgramPath
+  IniRead, Debug, yt-dlp-multiconfig.ini, Options, Debug
+  Progress, off
+  accData:= GetAccData() 
+  url := accData.2
+  RegExMatch(url, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
+  if (Debug != "off") {
+    Run, %comspec% /k %ProgramPath% --config-locations %Opt% --referer %referer% %url%
+  } 
+  else {
+    Run, %ProgramPath% --config-locations %Opt% --referer %referer% %url%
+  }
+}
 
 Fader(){
 Iterations =
