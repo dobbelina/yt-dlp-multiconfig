@@ -42,7 +42,7 @@ Please delete any pre-existing config files or they will interfere with this pro
 
 Download here: [yt-dlp-multiconfig.zip](https://github.com/dobbelina/yt-dlp-multiconfig/releases/latest/download/yt-dlp-multiconfig.zip)
 
-![GitHub Releases (by Release)](https://img.shields.io/github/downloads/dobbelina/yt-dlp-multiconfig/v1.1.0.0-Windows/total)
+![GitHub release (latest by date)](https://img.shields.io/github/downloads/dobbelina/yt-dlp-multiconfig/latest/total)
 
 (Windows only)  
 
