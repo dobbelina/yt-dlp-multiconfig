@@ -1,8 +1,8 @@
 ;@Ahk2Exe-SetCopyright    Dobbelina
 ;@Ahk2Exe-SetDescription  yt-dlp-multiconfig
-;@Ahk2Exe-SetFileVersion   1.1.0.0
+;@Ahk2Exe-SetFileVersion   1.2.0.0
 ;@Ahk2Exe-SetProductName   yt-dlp-multiconfig.exe
-;@Ahk2Exe-SetProductVersion   1.1.0.0
+;@Ahk2Exe-SetProductVersion   1.2.0.0
 
 #NoEnv
 #Include PageUrl.ahk
@@ -54,16 +54,19 @@ return
 label1:
 Opt = %A_ScriptDir%\presets\preset1.txt
 DownloadWithPreset(Opt)
+clipboard := ""
 Exit
 
 label2:
 Opt = %A_ScriptDir%\presets\preset2.txt
 DownloadWithPreset(Opt)
+clipboard := ""
 Exit
 
 label3:
 Opt = %A_ScriptDir%\presets\preset3.txt
 DownloadWithPreset(Opt)
+clipboard := ""
 Exit
 
 F4::
@@ -77,6 +80,9 @@ DownloadWithPreset(Opt) {
   Progress, off
   accData:= GetAccData() 
   url := accData.2
+  RegExMatch(clipboard, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", pagelink)
+  if (pagelink)
+  url := clipboard 
   RegExMatch(url, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
   if (Debug != "off") {
     Run, %comspec% /k %ProgramPath% --config-locations %Opt% --referer %referer% %url%
