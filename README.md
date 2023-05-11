@@ -22,7 +22,7 @@ It is also recommended to download ffmpeg.exe and put in the same folder as yt-d
 If you want to change the shortcut key **Ctrl + p** you can do that as well to start the download process.  
 To exit the program press **F4**
 
-If you have several links on a page, rightclick and select "Copy link", then that link will be
+If you have several links on a page, right click and select "Copy link", then that link will be
 downloaded instead of the current page link, when executing the download process.
 
 **yt-dlp-multiconfig.ini Settings:**  
