@@ -83,7 +83,7 @@ DownloadWithPreset(Opt) {
   RegExMatch(clipboard, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", pagelink)
   if (pagelink)
   url := clipboard 
-  RegExMatch(url, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
+  RegExMatch(accData.2, "^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)\/", referer)
   if (Debug != "off") {
     Run, %comspec% /k %ProgramPath% --config-locations %Opt% --referer %referer% %url%
   } 
