@@ -10,7 +10,6 @@
         <import addon="script.module.websocket" version="0.50.0" />
         <import addon="script.module.inputstreamhelper" />
         <import addon="script.module.requests" />
-		<import addon="script.cumination.image_reset" version="1.0.0" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
