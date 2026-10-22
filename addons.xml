@@ -61,7 +61,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <addon id="script.cumination.image_reset" name="Thumbnails reset for Cumination" version="1.0.0" provider-name="Dobbelina">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
-    <import addon="plugin.video.cumination" version="1.1.0" />
   </requires>
   <extension point="xbmc.python.script" library="default.py">
     <provides>executable</provides>
