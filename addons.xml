@@ -28,40 +28,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.uwc"
-       name="Ultimate Whitecream"
-       version="1.2.46"
-       provider-name="Whitecream, holisticdioxide">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.resolveurl" version="5.0.00"/>
-        <import addon="script.module.resolveurl.xxx" version="2.0.01"/>
-        <import addon="script.video.F4mProxy" version="2.5.7" />
-		<import addon="script.module.requests" />
 
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</summary>
-        <description lang="en">Watch [COLOR red][B]ADULT[/B][/COLOR] Movies with Ultimate WhiteCream</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider. DMCA - holisticdioxide@protonmail.com</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-        <news>[B]Version 1.2.46[/B]
-Chaturbate fixed
-Myfreecams fixed
-Desixnxx fixed
-FINALE RELEASE, CUMINATION FROM HERE ON
-</news>
-    </extension>
-</addon>
 
 <addon id="repository.dobbelina2" name="[COLOR pink]Dobbelina Repository2[/COLOR]" version="1.0.5" provider-name="dobbelina">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository2[/COLOR]">
@@ -90,21 +57,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.requests" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Proxy for f4m</summary>
-        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-    </extension>
-</addon>
 
 <addon id="script.cumination.image_reset" name="Images reset for Cumination" version="1.0.0" provider-name="Dobbelina">
   <requires>
