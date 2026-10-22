@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.204">
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.203">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -10,7 +10,6 @@
         <import addon="script.module.websocket" version="0.50.0" />
         <import addon="script.module.inputstreamhelper" />
         <import addon="script.module.requests" />
-        <import addon="script.cumination.image_reset" version="1.0.0" />
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
@@ -55,22 +54,5 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <forum>https://github.com/dobbelina/repository.dobbelina/issues</forum>
         <platform>all</platform>
     </extension>
-</addon>
-
-
-<addon id="script.cumination.image_reset" name="Thumbnails reset for Cumination" version="1.0.0" provider-name="Dobbelina">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Repair thumbnails in Cumination</summary>
-    <description lang="en_GB">Updates Cumination thumbnails by removing old ones from cache</description>
-    <platform>all</platform>
-    <license>GPL-3.0-or-later</license>
-    <assets><icon>icon.png</icon></assets>
-  </extension>
 </addon>
 </addons>
